@@ -40,7 +40,7 @@ export const orderBooks = async (req, res) => {
 
         console.log(response);
     } catch (error) {
-        console.error("Error creating order:", error);
+        console.log("Error creating order:", error);
         res.status(500).json({ error: "Error creating order" });
     }
 };
